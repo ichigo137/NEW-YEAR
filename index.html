@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome 2026</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Stars -->
+    <div id="stars-container"></div>
+
+    <button id="soundToggle">🔊</button>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <select id="themeSelect">
+            <option value="">Default</option>
+            <option value="gold">Gold</option>
+            <option value="cyber">Cyber</option>
+        </select>
+
+        <div id="pre-celebration">
+            <h1>Countdown to 2026</h1>
+
+            <div id="countdown">
+                <div class="time-box">
+                    <span class="number" id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="celebration">
+            <div class="new-year-text">HAPPY<br>NEW YEAR</div>
+            <div class="new-year-text year-huge">2026</div>
+        </div>
+
+    </div>
+
+    <!-- Audio -->
+    <audio id="newYearAudio" src="song.mp3" preload="auto"></audio>
+    <audio id="flipSound" src="click.mp3" preload="auto"></audio>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
